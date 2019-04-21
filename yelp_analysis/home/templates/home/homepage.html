@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+</head>
+<body>
+{% if logged_in == 1 %}
+<h1>Welcome{{ user_object.fname }}</h1>
+    <a href="/login_register/sign_out">sign out</a>
+    <h3>Let's Begin</h3>
+{% else %}
+    <h3>Register</h3>
+    <h3>Login</h3>
+{% endif %}
+
+</body>
+</html>
