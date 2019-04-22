@@ -2,17 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
     <title>HomePage</title>
 </head>
 <body>
-{% if logged_in == 1 %}
-<h1>Welcome{{ user_object.fname }}</h1>
-    <a href="/login_register/sign_out">sign out</a>
-    <h3>Let's Begin</h3>
-{% else %}
-    <h3>Register</h3>
-    <h3>Login</h3>
-{% endif %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <center><h1> Yelp Dataset Analysis</h1></center>
+            {% if logged_in == 1 %}
 
+
+                <h4 style="float: right">{{ user_object.email }}
+                    <a href="/login_register/sign_out">sign out</a></h4>
+            {% endif %}
+            <br/><br/><br/>
+            <h4>This dataset is a subset of Yelp's businesses, reviews, and user data. It was originally put together
+                for the Yelp
+                Dataset Challenge which is a chance for students to conduct research or analysis on Yelp's data and
+                share their
+                discoveries. In the dataset you'll find information about businesses across 11 metropolitan areas in
+                four countries.
+            </h4>
+            <br/>
+            {% if logged_in == 1 %}
+                <center>
+                    <h3>
+                        <a href="/analysis/step-1" class="btn btn-primary btn-lg">Lets Analyse It !</a>
+                    </h3>
+            {% else %}
+                <center>
+                    <h4>
+                        Lets Begin by <a href="/login_register/login_page" class="btn btn-primary btn-lg">Login</a>
+                    </h4>
+                    <h4>
+                        Don't have account : <a href="/login_register/register_page" class="btn btn-primary btn-lg">Register</a>
+                    </h4>
+
+                </center>
+            {% endif %}
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+</div>
 </body>
 </html>
