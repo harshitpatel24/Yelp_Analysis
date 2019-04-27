@@ -2,9 +2,170 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Step - 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Analyze Yelp Data</title>
 </head>
-<body>
 
+<body>
+<div class="container-fluid" style="background: black;height: 100px">
+    <div class="row">
+        <div class="col-lg-1">
+            <img src="https://cdn.worldvectorlogo.com/logos/yelp-icon.svg" height="85px" style="margin-top: 7.5px">
+        </div>
+        <div class="col-lg-3">
+            <h1 style="color: white;margin-top: 10%;margin-left: -5%">Yelp Data Analysis</h1>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-1"></div>
+
+        {% if logged_in == 1 %}
+            <div class="col-lg-6">
+                <h2 style="float: right;color: white;margin-top: 5%">{{ user_object.email }}
+                    <a href="/login_register/sign_out">
+                        <img src="data:image/png;base64,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"
+                             height="50px" width="50px">
+
+                    </a></h2>
+            </div>
+        {% else %}
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3">
+                <h4 style="float: right;margin-top: 7.5%">
+                    <a href="/login_register/login_page" class="btn btn-danger btn-lg">Login</a>
+                    <span style="color: white">&nbsp;OR&nbsp;</span>
+                    <a href="/login_register/register_page" class="btn btn-danger btn-lg">Register</a>
+                </h4>
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+<div class="container">
+    <br/>
+    <br/>
+    <div class="row">
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#home">Visualization 1</a></li>
+            <li><a data-toggle="pill" href="#menu1">Visualization 2</a></li>
+            <li><a data-toggle="pill" href="#menu2">Visualization 3</a></li>
+            <li><a data-toggle="pill" href="#menu3">Visualization 4</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h3><u>Visualization 1:</u> Distribution of ratings in given reviews.
+                    <br/><br/>
+                    <button onclick="myFunction()" class="btn btn-danger btn-lg">See Result</button>
+                </h3>
+
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h3>
+                    <u>Visualization 2:</u> Top businesses with highest number of reviews received from
+                    users.
+                </h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">&nbsp;How many top businesses you want?</label>
+                        <input type="text" class="form-control" id="category" name="category"
+                               placeholder="Enter Number">
+                    </div>
+                </form>
+                <button onclick="categories()" class="btn btn-danger btn-lg">See Result</button>
+
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h3>
+                    <u>Visualization 3:</u> Top business categories with highest
+                    number of reviews received from Users.
+                </h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">&nbsp;How many top categories you want?</label>
+                        <input type="text" class="form-control" id="business_category" name="business_category"
+                               placeholder="Enter Number">
+                    </div>
+                </form>
+                <button onclick="business_categories()" class="btn btn-danger btn-lg">See Result</button>
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                <h3><u>Visualization 4:</u>
+                Top businesses you want with most Five Star Reviews from Users.
+                </h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">&nbsp;How many businesses you want with most Five Star Reviews from Users?</label>
+                        <input type="text" class="form-control" id="five_star_business" name="five_star_business"
+                               placeholder="Enter Number">
+                    </div>
+                </form>
+                <button onclick="five_star_businesses()" class="btn btn-danger btn-lg">See Result</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <hr/>
+        <h3><b><u>Result</u></b></h3>
+        <div id="refreshing_div">
+            {% include 'analysis/result.html' %}
+        </div>
+    </div>
+</div>
 </body>
+
+
+<script>
+    function myFunction() {
+        $.ajax({
+            type: "POST",
+            url: "/analysis/rating_dist",
+            success: function (data) {
+                $('#refreshing_div').html(data)(
+                );
+            },
+        });
+    };
+
+    function categories() {
+        //alert("hello");
+        //alert($('#category').val());
+        $.ajax({
+            type: "POST",
+            url: "/analysis/top_businesses/" + $('#category').val(),
+            success: function (data) {
+                $('#refreshing_div').html(data)(
+                );
+            },
+        });
+    };
+
+    function business_categories() {
+        //alert("hello");
+        //alert($('#business_category').val());
+        $.ajax({
+            type: "POST",
+            url: "/analysis/top_business_categories/" + $('#business_category').val(),
+            success: function (data) {
+                $('#refreshing_div').html(data)(
+                );
+            },
+        });
+    };
+
+    function five_star_businesses() {
+        //alert("hello");
+        //alert($('#business_category').val());
+        $.ajax({
+            type: "POST",
+            url: "/analysis/five_star_businesses/" + $('#five_star_business').val(),
+            success: function (data) {
+                $('#refreshing_div').html(data)(
+                );
+            },
+        });
+    };
+</script>
 </html>

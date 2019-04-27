@@ -14,33 +14,38 @@
             crossorigin="anonymous"></script>
     <title>Login Here!!!</title>
 </head>
-<body>
-
-<div class="container">
+<body style="background: rgba(0,0,0,1)">
+<div style="height: 500px;width: 500px;background: white;margin: auto; margin-top: 10%; border-radius: 2%;padding: 3%">
     <div class="row">
-        <div class="col-lg-3"></div>
-        <div class="col-lg-6">
-            <h1>Login</h1>
-            <form role="form" method="post" action="/login_register/check_info" name="form2">
-                {% csrf_token %}
-                <div class="form-group">
-                    <label for="name">&nbsp;Email</label>
-                    <input type="text" class="form-control" id="email12" name="email" placeholder="Enter Email">
-                </div>
+        <center>
+            <img src="https://cdn.worldvectorlogo.com/logos/yelp-icon.svg" height="85px" style="margin-top: 7.5px">
+            <h3>Please sign in</h3></center>
+        <form role="form" method="post" action="/login_register/check_info" name="form2"
+              style="width: 85%;margin-left: 7%">
+            {% csrf_token %}
 
-                <div class="form-group">
-                    <label for="inputfile">&nbsp;Password</label>
-                    <input type="password" class="form-control" id="password12" name='pass'
-                           placeholder="Enter Password">
-                </div>
-                <button type="submit" class="btn btn-primary btn-lg">Log IN
+            <div class="form-group">
+                <label for="name">&nbsp;Email</label>
+                <input type="text" class="form-control" id="email12" name="email" placeholder="Enter Email">
+            </div>
+
+            <div class="form-group">
+                <label for="inputfile">&nbsp;Password</label>
+                <input type="password" class="form-control" id="password12" name='pass'
+                       placeholder="Enter Password">
+            </div>
+            <center>
+                <button type="submit" class="btn btn-danger btn-lg" style="padding: 3% 15%">Log In
                 </button>
-                <p> Dont have account ? <a href="/login_register/register_page"> Register Here </a></p>
-            </form>
-        </div>
-        <div class="col-lg-3"></div>
+                <br/><br/>
+                <p> Dont have account ? <a href="/login_register/register_page" style="color: red"> Register Here </a>
+                </p>
+            </center>
+        </form>
     </div>
+    <div class="col-lg-3"></div>
 </div>
 
+</div>
 </body>
 </html>

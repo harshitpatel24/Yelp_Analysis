@@ -14,46 +14,41 @@
             crossorigin="anonymous"></script>
     <title>Register Here!!!</title>
 </head>
-<body>
+<body style="background: black">
+<div style="height: 600px;width: 500px;background: white;margin: auto; margin-top: 5%; border-radius: 2%;padding: 3%">
 
-
-<div class="container">
     <div class="row">
-        <div class="col-lg-3"></div>
-        <div class="col-lg-6">
-            <div class="form-group">
-                <h1>Register</h1>
-                <form role="form" method="post" action="/login_register/save_info" enctype="multipart/form-data"
-                      name="form1"
-                      id="form1">
-                    {% csrf_token %}
-                    <div class="form-group">
-                        <label for="firstname">&nbsp;Firstname</label>
-                        <input type="text" class="form-control" id="firstname" name="fname"
-                               placeholder="Enter Firstname">
-                    </div>
-                    <div class="form-group">
-                        <label for="lastname">&nbsp;Lastname</label>
-                        <input type="text" class="form-control" id="lastname" name="lname" placeholder="Enter Lastname">
-                    </div>
-                    <label for="email">&nbsp;Email</label>
-                    <input type="text" class="form-control" id="email" name="email" placeholder="Enter Email">
-            </div>
-            <div class="form-group">
-                <label for="password">&nbsp;Password</label>
-                <input type="password" class="form-control" id="password" name="pass"
-                       placeholder="Enter Password">
-            </div>
-            <button type="submit" class="btn btn-primary btn-lg">Register Now
-            </button>
-            <p> Already have account ? <a href="/login_register/login_page"> Login Here </a></p>
-
-            </form>
+        <center>
+            <img src="https://cdn.worldvectorlogo.com/logos/yelp-icon.svg" height="85px" style="margin-top: 7.5px">
+            <h3>Please Register</h3></center>
+        <div class="form-group">
+            <form role="form" method="post" action="/login_register/save_info" enctype="multipart/form-data"
+                  name="form1"
+                  id="form1">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="firstname">&nbsp;Firstname</label>
+                    <input type="text" class="form-control" id="firstname" name="fname"
+                           placeholder="Enter Firstname">
+                </div>
+                <div class="form-group">
+                    <label for="lastname">&nbsp;Lastname</label>
+                    <input type="text" class="form-control" id="lastname" name="lname" placeholder="Enter Lastname">
+                </div>
+                <label for="email">&nbsp;Email</label>
+                <input type="text" class="form-control" id="email" name="email" placeholder="Enter Email">
         </div>
+        <div class="form-group">
+            <label for="password">&nbsp;Password</label>
+            <input type="password" class="form-control" id="password" name="pass"
+                   placeholder="Enter Password">
+        </div>
+        <center>
+        <button type="submit" class="btn btn-danger btn-lg">Register Now
+        </button><br/><br/>
+        <p> Already have account ? <a href="/login_register/login_page" style="color: red"> Login Here </a></p>
+        </center>
+        </form>
     </div>
-    <div class="col-lg-3"></div>
-</div>
-
-
 </body>
 </html>
