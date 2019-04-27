@@ -2,21 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d362d48-64b8-4c33-8c5e-491807357e80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/analysis/templates/analysis/apriori.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/templates/analysis/result.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analysis/templates/analysis/step-2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cleaning/Connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Cleaning/Connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cleaning/Connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL_procedures_conncetion_python/Connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cleaning/Stored Procedures.sql" beforeDir="false" afterPath="$PROJECT_DIR$/MySQL_procedures_conncetion_python/Stored Procedures.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/templates/analysis/apriori.html" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/templates/analysis/apriori.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analysis/templates/analysis/step-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/templates/analysis/step-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/templates/analysis/step-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/templates/analysis/step-2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analysis/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/home/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/homepage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login_register/templates/login_register/login_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/login_register/templates/login_register/login_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login_register/templates/login_register/register_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/login_register/templates/login_register/register_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yelp_analysis/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/yelp_analysis/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yelp_analysis/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/yelp_analysis/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/00R8IAC5JT4DQWB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/0G6E9V4TQSB1KOX.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/2PUKB0XF75GC6IJ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/6L91A86NMDFX4GD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/90IWJOCA05G5QHJ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/GPUUYHW1GRC8ML0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/GTRKBMB4OPMHS8M.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/HVKDXL0J7WCGK3L.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/I66ULKUDWOXERBA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/IV0ANJT9V263O4G.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/IW9YOXKW1CIQR0R.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/JXW1GJD3TQOUD7N.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/LFLAADR46NX5MDS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/OXEF27AP2BV372Y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/QED0PK6E5Y1NPFQ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/QVS0QIZ9GRRWK7R.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/ROBQJKFDZH2M9CT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/RS0Y84UF2M70R4I.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/SX936HXUHJKD5GD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/VZJFQF3LZ35B5KF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/XFGUJCM319OLL5T.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/XWGMTY54OFZ0S2M.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,62 +45,30 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login_register/templates/login_register/login_page.html">
+        <entry file="file://$PROJECT_DIR$/MySQL_procedures_conncetion_python/Connection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="28" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="28" />
+            <state relative-caret-position="286">
+              <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Cleaning/Connection.py">
+        <entry file="file://$PROJECT_DIR$/home/templates/home/homepage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="140" column="30" lean-forward="true" selection-start-line="140" selection-start-column="30" selection-end-line="140" selection-end-column="30" />
+            <state relative-caret-position="66">
+              <caret line="71" column="21" lean-forward="true" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/analysis/views.py">
+        <entry file="file://$PROJECT_DIR$/MySQL_procedures_conncetion_python/Stored Procedures.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="164" column="65" lean-forward="true" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="65" />
-              <folding>
-                <element signature="e#0#52#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="66">
+              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/analysis/templates/analysis/step-1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="162" column="48" selection-start-line="162" selection-start-column="28" selection-end-line="162" selection-end-column="48" />
-              <folding>
-                <element signature="e#6253#6259#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/analysis/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/analysis/templates/analysis/result.html">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -113,19 +99,20 @@
         <option value="$PROJECT_DIR$/login_register/views.py" />
         <option value="$PROJECT_DIR$/templates/header.html" />
         <option value="$PROJECT_DIR$/home/templates/header.html" />
-        <option value="$PROJECT_DIR$/login_register/templates/login_register/login_page.html" />
-        <option value="$PROJECT_DIR$/login_register/templates/login_register/register_page.html" />
         <option value="$PROJECT_DIR$/home/views.py" />
-        <option value="$PROJECT_DIR$/home/templates/home/homepage.html" />
-        <option value="$PROJECT_DIR$/analysis/templates/analysis/step-2.html" />
-        <option value="$PROJECT_DIR$/analysis/templates/analysis/apriori.html" />
         <option value="$PROJECT_DIR$/yelp_analysis/settings.py" />
         <option value="$PROJECT_DIR$/yelp_analysis/urls.py" />
         <option value="$PROJECT_DIR$/analysis/templates/analysis/result.html" />
-        <option value="$PROJECT_DIR$/analysis/templates/analysis/step-1.html" />
         <option value="$PROJECT_DIR$/analysis/urls.py" />
         <option value="$PROJECT_DIR$/analysis/views.py" />
         <option value="$PROJECT_DIR$/Cleaning/Connection.py" />
+        <option value="$PROJECT_DIR$/MySQL_procedures_conncetion_python/Connection.py" />
+        <option value="$PROJECT_DIR$/analysis/templates/analysis/step-1.html" />
+        <option value="$PROJECT_DIR$/analysis/templates/analysis/step-2.html" />
+        <option value="$PROJECT_DIR$/login_register/templates/login_register/login_page.html" />
+        <option value="$PROJECT_DIR$/analysis/templates/analysis/apriori.html" />
+        <option value="$PROJECT_DIR$/login_register/templates/login_register/register_page.html" />
+        <option value="$PROJECT_DIR$/home/templates/home/homepage.html" />
       </list>
     </option>
   </component>
@@ -141,6 +128,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -169,11 +157,6 @@
             <path>
               <item name="yelp_analysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="yelp_analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="Cleaning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yelp_analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yelp_analysis" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -206,6 +189,11 @@
               <item name="login_register" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="login_register" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yelp_analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yelp_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="MySQL_procedures_conncetion_python" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yelp_analysis" type="b2602c69:ProjectViewProjectNode" />
@@ -216,7 +204,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,18 +271,19 @@
       <workItem from="1555976764710" duration="21967000" />
       <workItem from="1556054337042" duration="9354000" />
       <workItem from="1556120099956" duration="20948000" />
-      <workItem from="1556337124244" duration="1450000" />
+      <workItem from="1556337124244" duration="6353000" />
+      <workItem from="1556371025299" duration="3094000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64024000" />
+    <option name="totallyTimeSpent" value="72021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1533" height="875" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2669805" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27101547" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -378,38 +366,6 @@
     <entry file="file://$PROJECT_DIR$/analysis/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/login_register/templates/login_register/register_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/analysis/templates/analysis/apriori.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2684">
-          <caret line="122" column="48" lean-forward="true" selection-start-line="122" selection-start-column="48" selection-end-line="122" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#b#0;n#h4#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#1;n#h4#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/templates/home/homepage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1827">
-          <caret line="220" column="42" selection-start-line="220" selection-start-column="26" selection-end-line="220" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/analysis/templates/analysis/step-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="50" selection-start-line="17" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yelp_analysis/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="636">
@@ -434,21 +390,36 @@
     <entry file="file://$PROJECT_DIR$/media/XQO46TEOJDWIYQU.png" />
     <entry file="file://$PROJECT_DIR$/login_register/templates/login_register/login_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="28" />
+        <state relative-caret-position="418">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/analysis/templates/analysis/result.html">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/analysis/templates/analysis/apriori.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login_register/templates/login_register/register_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/analysis/templates/analysis/step-1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="162" column="48" selection-start-line="162" selection-start-column="28" selection-end-line="162" selection-end-column="48" />
-          <folding>
-            <element signature="e#6253#6259#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="242">
+          <caret line="32" column="16" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="32" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/templates/analysis/step-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -462,20 +433,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/templates/analysis/result.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/analysis/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="164" column="65" lean-forward="true" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="65" />
+        <state relative-caret-position="570">
+          <caret line="163" column="40" selection-start-line="163" selection-start-column="40" selection-end-line="163" selection-end-column="40" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cleaning/Connection.py">
+    <entry file="file://$PROJECT_DIR$/MySQL_procedures_conncetion_python/Stored Procedures.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="140" column="30" lean-forward="true" selection-start-line="140" selection-start-column="30" selection-end-line="140" selection-end-column="30" />
+        <state relative-caret-position="66">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MySQL_procedures_conncetion_python/Connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/templates/home/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="71" column="21" lean-forward="true" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
         </state>
       </provider>
     </entry>

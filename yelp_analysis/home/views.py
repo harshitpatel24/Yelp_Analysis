@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 # Create your views here.
-from Cleaning.Connection import get_columns, get_data
+from MySQL_procedures_conncetion_python.Connection import get_columns, get_data
 from login_register.models import users
 
 

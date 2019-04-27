@@ -11,7 +11,9 @@
 <div class="container-fluid" style="background: black;height: 100px;width: 100%">
     <div class="row">
         <div class="col-lg-1">
-            <img src="https://cdn.worldvectorlogo.com/logos/yelp-icon.svg" height="85px" style="margin-top: 7.5px">
+            <a href="/home/homepage">
+                <img src="https://cdn.worldvectorlogo.com/logos/yelp-icon.svg" height="85px" style="margin-top: 7.5px">
+            </a>
         </div>
         <div class="col-lg-3">
             <h1 style="color: white;margin-top: 10%;margin-left: -5%">Yelp Data Analysis</h1>
@@ -81,7 +83,13 @@
                     <td>User data including the user's friend mapping and all the metadata associated with the user.
                     </td>
                 </tr>
-                 <tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Review</td>
+                    <td>Review data given by users to several businesses
+                    </td>
+                </tr>
+                <tr>
                     <th scope="row">4</th>
                     <td>Check in</td>
                     <td>Checkins on a business.</td>
@@ -117,8 +125,8 @@
                         <tbody>
                         {% for data in business_data %}
                             <tr>
-                            {% for d in data %}
-                                <td>{{ d }}</td>
+                                {% for d in data %}
+                                    <td>{{ d }}</td>
                                 {% endfor %}
                             </tr>
 
@@ -138,8 +146,8 @@
                         <tbody>
                         {% for data in user_data %}
                             <tr>
-                            {% for d in data %}
-                                <td>{{ d }}</td>
+                                {% for d in data %}
+                                    <td>{{ d }}</td>
                                 {% endfor %}
                             </tr>
 
@@ -159,8 +167,8 @@
                         <tbody>
                         {% for data in review_data %}
                             <tr>
-                            {% for d in data %}
-                                <td>{{ d }}</td>
+                                {% for d in data %}
+                                    <td>{{ d }}</td>
                                 {% endfor %}
                             </tr>
                         {% endfor %}
@@ -179,8 +187,8 @@
                         <tbody>
                         {% for data in check_in_data %}
                             <tr>
-                            {% for d in data %}
-                                <td>{{ d }}</td>
+                                {% for d in data %}
+                                    <td>{{ d }}</td>
                                 {% endfor %}
                             </tr>
 
@@ -200,8 +208,8 @@
                         <tbody>
                         {% for data in tip_data %}
                             <tr>
-                            {% for d in data %}
-                                <td>{{ d }}</td>
+                                {% for d in data %}
+                                    <td>{{ d }}</td>
                                 {% endfor %}
                             </tr>
                         {% endfor %}
@@ -214,7 +222,8 @@
     </div>
 </div>
 
-<div class="container-fluid" style="background: black;color: white;height: 65px;position: fixed;left: 0;bottom: 0;width: 100%;text-align: center">
+<div class="container-fluid"
+     style="background: black;color: white;height: 65px;position: fixed;left: 0;bottom: 0;width: 100%;text-align: center">
     <div class="row">
         {% if logged_in == 1 %}
             <h3>Lets <u><a href="/analysis/step-1" style="color: white"> Visualize</a></u> and <u><a

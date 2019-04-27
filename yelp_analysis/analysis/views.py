@@ -4,9 +4,10 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render
 import pandas as pd
 # Create your views here.
-from Cleaning.Connection import get_all_business_count, get_all_category_count, get_top_10_categories, \
+from MySQL_procedures_conncetion_python.Connection import get_all_business_count, get_all_category_count, get_top_10_categories, \
     get_filtered_users, get_filtered_reviews, get_filtered_businesses, get_review_distribution, \
-    get_businesses_with_highest_ratings, get_business_categories_with_highest_ratings
+    get_businesses_with_highest_ratings, get_business_categories_with_highest_ratings, get_businesses_five_stars, \
+    get_business_name_from_ids
 from login_register.models import users
 from mlxtend.frequent_patterns import apriori
 from mlxtend.preprocessing import TransactionEncoder
@@ -159,14 +160,22 @@ def top_business_categories(request, category):
 
 @csrf_exempt
 def five_star_businesses(request, category):
+    print('here I am')
     args = {'data': 'hello', 'post': 0, 'image': ''}
     if request.method == 'POST':
         image_name = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(15))
-        businesses, reviews = get_businesses_five_stars(category)
+        businesses = []
+        business_ids, reviews = get_businesses_five_stars(category)
+        for id in business_ids:
+            print(id, get_business_name_from_ids(id))
+            if id == None:
+                businesses.append('No Name')
+            else:
+                businesses.append(get_business_name_from_ids(id))
         plt.figure(figsize=(8, 8))
         plt.bar(businesses, reviews)
         plt.xlabel('Businesses')
-        plt.ylabel('Number of reviews received')
+        plt.ylabel('Number of Five star reviews received')
         plt.title('Top '+str(category)+ ' businesses with highest five stars reviews')
         plt.savefig('/home/harshit/Yelp_Analysis/yelp_analysis/media/' + image_name + '.png')
         args['post'] = 1

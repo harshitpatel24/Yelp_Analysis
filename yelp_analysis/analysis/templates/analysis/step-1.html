@@ -6,13 +6,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <title>Analyze Yelp Data</title>
+    <style>
+        .ajax-loader {
+            visibility: hidden;
+            background-color: rgba(255, 255, 255, 0.7);
+            position: absolute;
+            z-index: +100 !important;
+            width: 100%;
+            height: 100%;
+        }
+
+        .ajax-loader img {
+            position: relative;
+            top: 50%;
+            left: 50%;
+        }
+    </style>
 </head>
 
 <body>
 <div class="container-fluid" style="background: black;height: 100px">
     <div class="row">
         <div class="col-lg-1">
-            <img src="https://cdn.worldvectorlogo.com/logos/yelp-icon.svg" height="85px" style="margin-top: 7.5px">
+            <a href="/home/homepage">
+                <img src="https://cdn.worldvectorlogo.com/logos/yelp-icon.svg" height="85px" style="margin-top: 7.5px">
+            </a>
         </div>
         <div class="col-lg-3">
             <h1 style="color: white;margin-top: 10%;margin-left: -5%">Yelp Data Analysis</h1>
@@ -41,16 +59,20 @@
         {% endif %}
     </div>
 </div>
-
+<div class="ajax-loader">
+    <img src="/media/ajax-loader.gif" class="img-responsive"/>
+</div>
 <div class="container">
     <br/>
     <br/>
     <div class="row">
+
         <ul class="nav nav-pills">
             <li class="active"><a data-toggle="pill" href="#home">Visualization 1</a></li>
             <li><a data-toggle="pill" href="#menu1">Visualization 2</a></li>
             <li><a data-toggle="pill" href="#menu2">Visualization 3</a></li>
             <li><a data-toggle="pill" href="#menu3">Visualization 4</a></li>
+            <a href="/analysis/step-2" class="btn btn-danger btn-md">Go to Analysis</a>
         </ul>
 
         <div class="tab-content">
@@ -92,11 +114,12 @@
             </div>
             <div id="menu3" class="tab-pane fade">
                 <h3><u>Visualization 4:</u>
-                Top businesses you want with most Five Star Reviews from Users.
+                    Top businesses with most Five Star Reviews from Users.
                 </h3>
                 <form>
                     <div class="form-group">
-                        <label for="name">&nbsp;How many businesses you want with most Five Star Reviews from Users?</label>
+                        <label for="name">&nbsp;How many businesses you want with most Five Star Reviews from
+                            Users?</label>
                         <input type="text" class="form-control" id="five_star_business" name="five_star_business"
                                placeholder="Enter Number">
                     </div>
@@ -121,11 +144,18 @@
     function myFunction() {
         $.ajax({
             type: "POST",
+            beforeSend: function () {
+                $('.ajax-loader').css("visibility", "visible");
+            },
             url: "/analysis/rating_dist",
             success: function (data) {
+                $('.ajax-loader').css("visibility", "hidden");
                 $('#refreshing_div').html(data)(
                 );
             },
+            complete: function () {
+                $('.ajax-loader').css("visibility", "hidden");
+            }
         });
     };
 
@@ -134,11 +164,18 @@
         //alert($('#category').val());
         $.ajax({
             type: "POST",
+            beforeSend: function () {
+                $('.ajax-loader').css("visibility", "visible");
+            },
             url: "/analysis/top_businesses/" + $('#category').val(),
             success: function (data) {
+                $('.ajax-loader').css("visibility", "hidden");
                 $('#refreshing_div').html(data)(
                 );
             },
+            complete: function () {
+                $('.ajax-loader').css("visibility", "hidden");
+            }
         });
     };
 
@@ -147,11 +184,18 @@
         //alert($('#business_category').val());
         $.ajax({
             type: "POST",
+            beforeSend: function () {
+                $('.ajax-loader').css("visibility", "visible");
+            },
             url: "/analysis/top_business_categories/" + $('#business_category').val(),
             success: function (data) {
+                $('.ajax-loader').css("visibility", "hidden");
                 $('#refreshing_div').html(data)(
                 );
             },
+            complete: function () {
+                $('.ajax-loader').css("visibility", "hidden");
+            }
         });
     };
 
@@ -160,11 +204,18 @@
         //alert($('#business_category').val());
         $.ajax({
             type: "POST",
+            beforeSend: function () {
+                $('.ajax-loader').css("visibility", "visible");
+            },
             url: "/analysis/five_star_businesses/" + $('#five_star_business').val(),
             success: function (data) {
+                $('.ajax-loader').css("visibility", "hidden");
                 $('#refreshing_div').html(data)(
                 );
             },
+            complete: function () {
+                $('.ajax-loader').css("visibility", "hidden");
+            }
         });
     };
 </script>
